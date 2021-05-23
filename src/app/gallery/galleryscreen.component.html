@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="header">
+    <app-header [msgFromParent]="isPrivateUser"></app-header>
+  </div>
+ 
+    <div class="card">
+  
+      <div class="row">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4" animateIn  *ngFor="let item of gallerySource">
+          <figure >
+            <img [src]="item.image" alt="Placeholder image"  class="image-style">
+            <figcaption style="text-align: center;">{{item.title}}</figcaption>
+          </figure>
+        </div>
+       </div>
+    </div>
+
+  <div class="footer">
+    <div class="col">
+      <div class="footer-label" >
+        SkyWalk
+      </div>
+      <p class="footer-title">
+© 2021 All Rights Reserved for SkyWalk PVT. LTD
+      </p>
+    </div>
+  </div>
+</div>
